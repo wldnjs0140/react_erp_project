@@ -1,0 +1,294 @@
+/* 전체 페이지 스타일 */
+.inventory-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5; /* 페이지 배경색 */
+}
+
+/* 제목 스타일 */
+.inventory-page h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.tabs {
+  margin-bottom: 20px;
+}
+.tabs button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #ccc;
+}
+.tabs button:hover {
+  background-color: #007bff;
+  color: white;
+}
+.tabs button.active {
+  background-color: #007bff;
+  color: white;
+}
+.tabs button.active:hover {
+  background-color: #0056b3;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 테이블 그림자 */
+}
+
+/* 테이블 헤더와 셀 스타일 */
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 검색 영역 스타일 */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* 버튼 hover 효과 */
+}
+
+/* 정렬 영역 스타일 */
+.sort-area {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sort-area button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sort-area button:hover {
+  background-color: #0056b3;
+}
+
+/* 페이징 블록 */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination button.active {
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+}
+
+/* 팝업 오버레이 */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 팝업 스타일 */
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  text-align: left; /* 팝업 내 텍스트 왼쪽 정렬 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 팝업 그림자 */
+  z-index: 100; /* 기본 오버레이의 z-index 설정 */
+}
+
+.popup h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.popup div {
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  margin-top: 20px;
+  text-align: center; /* 버튼은 여전히 중앙 정렬 */
+}
+
+.popup input {
+  width: calc(100% - 90%);
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.popup b.qSize {
+  font-size: 18px;
+  color: rgb(82, 82, 224);
+}
+
+.qMessage {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* 결제 및 취소 버튼 스타일 */
+.pay-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pay-button {
+  background-color: #28a745;
+}
+
+.pay-button:hover {
+  background-color: #218838; /* 결제 버튼 hover 효과 */
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.cancel-button:hover {
+  background-color: #c82333; /* 취소 버튼 hover 효과 */
+}
+
+/* 재고 추가 팝업 스타일 */
+.add-stock-popup {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  text-align: left; /* 팝업 내 텍스트 왼쪽 정렬 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 팝업 그림자 */
+}
+
+.add-stock-popup h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.add-stock-popup div {
+  margin-bottom: 10px;
+}
+
+.add-stock-popup-buttons {
+  margin-top: 20px;
+  text-align: center; /* 버튼은 여전히 중앙 정렬 */
+}
+
+.add-stock-popup input {
+  width: calc(100% - 10%);
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* 재고 수정 팝업 스타일 */
+.edit-stock-popup {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  text-align: left; /* 팝업 내 텍스트 왼쪽 정렬 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 팝업 그림자 */
+  z-index: 101; /* 재고 수정 팝업의 z-index 설정 */
+}
+
+.edit-stock-popup h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.edit-stock-popup div {
+  margin-bottom: 10px;
+}
+
+.edit-stock-popup-buttons {
+  margin-top: 20px;
+  text-align: center; /* 버튼은 여전히 중앙 정렬 */
+}
+
+.edit-stock-popup input {
+  width: calc(100% - 10%);
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
